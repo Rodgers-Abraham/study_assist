@@ -1,0 +1,55 @@
+LECTURE NOTES: Introduction to Machine Learning
+Course: CS401 | Week 3
+
+OVERVIEW
+Machine Learning (ML) is a subset of Artificial Intelligence that enables systems
+to learn from data and improve their performance without being explicitly programmed.
+
+KEY CONCEPTS
+
+1. SUPERVISED LEARNING
+   - The model is trained on labeled data (input-output pairs)
+   - Goal: Learn a mapping function from inputs to outputs
+   - Examples: Email spam detection, house price prediction
+   - Common algorithms: Linear Regression, Decision Trees, SVM, Neural Networks
+
+2. UNSUPERVISED LEARNING
+   - The model is trained on unlabeled data
+   - Goal: Discover hidden patterns or intrinsic structures
+   - Examples: Customer segmentation, anomaly detection
+   - Common algorithms: K-Means Clustering, PCA, Autoencoders
+
+3. REINFORCEMENT LEARNING
+   - An agent learns by interacting with an environment
+   - Receives rewards for correct actions, penalties for wrong ones
+   - Goal: Maximize cumulative reward over time
+   - Examples: Game playing (AlphaGo), robotics, self-driving cars
+
+IMPORTANT DEFINITIONS
+
+- Training Set: Data used to train the model
+- Validation Set: Data used to tune model hyperparameters
+- Test Set: Data used to evaluate final model performance
+- Overfitting: Model performs well on training data but poorly on unseen data
+- Underfitting: Model is too simple and fails to capture the underlying pattern
+- Feature: An individual measurable property or characteristic of a data point
+- Label: The output variable we are trying to predict
+
+THE BIAS-VARIANCE TRADEOFF
+- High Bias → Underfitting (model too simple)
+- High Variance → Overfitting (model too complex)
+- Optimal model: Balance between bias and variance
+
+MODEL EVALUATION METRICS
+- Accuracy: Percentage of correct predictions
+- Precision: Of all positive predictions, how many were actually positive?
+- Recall: Of all actual positives, how many did we correctly identify?
+- F1 Score: Harmonic mean of Precision and Recall
+- MSE (Mean Squared Error): Used for regression problems
+
+KEY TAKEAWAYS
+1. Choose supervised learning when you have labeled training data
+2. Use unsupervised learning for pattern discovery in unlabeled data
+3. Reinforcement learning excels in sequential decision-making tasks
+4. Always split data into train/validation/test sets
+5. Watch for overfitting — use regularization techniques

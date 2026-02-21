@@ -1,47 +1,47 @@
 import json
-import re 
-from langchain_core.tools import tool 
+import re
+from langchain_core.tools import tool
+
 
 @tool
 def generate_quiz(notes_content: str) -> str:
     """
-   -  Generate 5 multi-choice questions based on notes
-    - Return a JSON string of questions options and correct 
-    answer
-    input: the lecture note or summary 
+    Generate a quiz with 5 multiple-choice questions based on the lecture notes.
+    Returns a JSON string of questions with options and correct answers.
+    Input: notes_content (str) - the lecture notes or summary.
     """
-    
-    return f""" 
-   Generate exactly 5 multi choice quiz questions from this content:
-   {notes_content}
-   Return only valid JSON array with this exact structure (no markdown, no extra text)
-   [
-       {{
-           "question" : "//Question text/// here?//",
-           "options" : {{
-               "A" : "//OptionA//",
-               "B" : "OptionB",
-               "C" : "OptionC",
-               "D" : "OtionD"
-           }},
-           "answer" : "A",
-           "topic" : "short topic label"
-       }}
-   ]
-"""
+    # Returns a structured prompt for the agent to fill in
+    return f"""Generate exactly 5 multiple-choice quiz questions from this content:
+
+{notes_content}
+
+Return ONLY a valid JSON array with this exact structure (no markdown, no extra text):
+[
+  {{
+    "question": "Question text here?",
+    "options": {{
+      "A": "Option A",
+      "B": "Option B", 
+      "C": "Option C",
+      "D": "Option D"
+    }},
+    "answer": "A",
+    "topic": "short topic label"
+  }}
+]"""
+
 
 def parse_quiz_json(raw: str) -> list:
     """
-    extract and parse the JSON quiz array as an LLM output 
+    Extract and parse the JSON quiz array from LLM output.
     """
-    #cleaned json
+    # Strip markdown code fences if present
     cleaned = re.sub(r"```(?:json)?", "", raw).replace("```", "").strip()
-    
-    # find the new json array 
+
+    # Find JSON array
     start = cleaned.find("[")
     end = cleaned.rfind("]") + 1
     if start == -1 or end == 0:
-        raise ValueError("NO JSON ARRAY FOUND IN QUIZ RESPONSE")
-    
+        raise ValueError("No JSON array found in quiz response")
+
     return json.loads(cleaned[start:end])
-    
