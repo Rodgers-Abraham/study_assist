@@ -1,79 +1,97 @@
 [
   {
-    "topic": "Machine Learning",
+    "topic": "Unsupervised Learning",
     "count": 1,
     "mistakes": [
       {
-        "question": "What type of learning is used when the model is trained on labeled data?",
-        "user_answer": "D - Deep Learning",
-        "correct_answer": "A - Supervised Learning",
-        "timestamp": "2026-02-21T15:39:06.640767"
-      }
-    ]
-  },
-  {
-    "topic": "Unsupervised Learning",
-    "count": 5,
-    "mistakes": [
-      {
-        "question": "Which of the following is an example of unsupervised learning?",
-        "user_answer": "D - House price prediction",
-        "correct_answer": "B - Customer segmentation",
-        "timestamp": "2026-02-21T15:39:07.722175"
-      },
-      {
-        "question": "Which of the following is an example of unsupervised learning?",
-        "user_answer": "D - House price prediction",
-        "correct_answer": "B - Customer segmentation",
-        "timestamp": "2026-02-21T15:39:08.303319"
-      },
-      {
-        "question": "Which of the following is an example of unsupervised learning?",
-        "user_answer": "D - House price prediction",
-        "correct_answer": "B - Customer segmentation",
-        "timestamp": "2026-02-21T15:39:22.031475"
-      },
-      {
-        "question": "Which of the following is an example of unsupervised learning?",
-        "user_answer": "D - House price prediction",
-        "correct_answer": "B - Customer segmentation",
-        "timestamp": "2026-02-21T15:39:38.034512"
-      },
-      {
-        "question": "Which of the following is an example of unsupervised learning?",
-        "user_answer": "D - House price prediction",
-        "correct_answer": "B - Customer segmentation",
-        "timestamp": "2026-02-21T15:39:56.510840"
+        "question": "Which algorithm is commonly used for unsupervised learning?",
+        "user_answer": "D - Neural Networks",
+        "correct_answer": "B - K-Means Clustering",
+        "timestamp": "2026-02-24T21:35:03.694950"
       }
     ]
   },
   {
     "topic": "Reinforcement Learning",
-    "count": 4,
+    "count": 5,
     "mistakes": [
       {
         "question": "What is the goal of reinforcement learning?",
-        "user_answer": "D - To evaluate final model performance",
+        "user_answer": "B - To discover hidden patterns or intrinsic structures",
         "correct_answer": "C - To maximize cumulative reward over time",
-        "timestamp": "2026-02-21T15:40:09.702223"
+        "timestamp": "2026-02-24T21:35:20.478922"
       },
       {
         "question": "What is the goal of reinforcement learning?",
-        "user_answer": "D - To evaluate final model performance",
+        "user_answer": "B - To discover hidden patterns or intrinsic structures",
         "correct_answer": "C - To maximize cumulative reward over time",
-        "timestamp": "2026-02-21T15:40:26.781161"
+        "timestamp": "2026-02-24T21:35:21.443360"
       },
       {
         "question": "What is the goal of reinforcement learning?",
-        "user_answer": "D - To evaluate final model performance",
+        "user_answer": "B - To discover hidden patterns or intrinsic structures",
         "correct_answer": "C - To maximize cumulative reward over time",
-        "timestamp": "2026-02-21T15:40:41.085460"
+        "timestamp": "2026-02-24T21:35:22.261234"
       },
       {
         "question": "What is the goal of reinforcement learning?",
-        "user_answer": "D - To evaluate final model performance",
+        "user_answer": "B - To discover hidden patterns or intrinsic structures",
         "correct_answer": "C - To maximize cumulative reward over time",
-        "timestamp": "2026-02-21T15:40:56.851859"
+        "timestamp": "2026-02-24T21:35:35.828112"
+      },
+      {
+        "question": "What is the goal of reinforcement learning?",
+        "user_answer": "B - To discover hidden patterns or intrinsic structures",
+        "correct_answer": "C - To maximize cumulative reward over time",
+        "timestamp": "2026-02-24T21:35:55.499251"
+      }
+    ]
+  },
+  {
+    "topic": "Model Evaluation",
+    "count": 5,
+    "mistakes": [
+      {
+        "question": "What is the term for a model that performs well on training data but poorly on unseen data?",
+        "user_answer": "B - Underfitting",
+        "correct_answer": "A - Overfitting",
+        "timestamp": "2026-02-24T21:36:07.436890"
+      },
+      {
+        "question": "What is the term for a model that performs well on training data but poorly on unseen data?",
+        "user_answer": "B - Underfitting",
+        "correct_answer": "A - Overfitting",
+        "timestamp": "2026-02-24T21:36:23.892734"
+      },
+      {
+        "question": "What is the term for a model that performs well on training data but poorly on unseen data?",
+        "user_answer": "B - Underfitting",
+        "correct_answer": "A - Overfitting",
+        "timestamp": "2026-02-24T21:36:38.747037"
+      },
+      {
+        "question": "What is the term for a model that performs well on training data but poorly on unseen data?",
+        "user_answer": "B - Underfitting",
+        "correct_answer": "A - Overfitting",
+        "timestamp": "2026-02-24T21:36:55.835094"
+      },
+      {
+        "question": "What is the term for a model that performs well on training data but poorly on unseen data?",
+        "user_answer": "B - Underfitting",
+        "correct_answer": "A - Overfitting",
+        "timestamp": "2026-02-24T21:37:11.908369"
+      }
+    ]
+  },
+  {
+    "topic": "Data Splitting",
+    "count": 1,
+    "mistakes": [
+      {
+        "question": "What is the purpose of splitting data into train, validation, and test sets?",
+        "user_answer": "B - To improve model accuracy",
+        "correct_answer": "D - All of the above",
+        "timestamp": "2026-02-24T21:37:27.018379"
       }
     ]
   }

@@ -84,7 +84,7 @@ suggest which topics the student should revise.
         memory = memory,
         verbose = True, # SHOWING THE AGENT REASONING STEP 
         handle_parsing_errors= True,
-        max_iterations= 5
+        max_iterations= 10
        
     )
     
